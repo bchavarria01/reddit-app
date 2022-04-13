@@ -11,7 +11,7 @@ import SwiftUI
 struct reddit_chileApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PermissionsTabView()
         }
     }
 }
