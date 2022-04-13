@@ -1,0 +1,4 @@
+language: objective-c
+script:
+  - xcodebuild clean build -scheme reddit-chile -workspace reddit-chile.xcworkspace -destination 'platform=iOS Simulator,OS=15.2,name=iPhone 13 Pro Max' | xcpretty && exit ${PIPESTATUS[0]}
+  - xcodebuild test -scheme reddit-chile -workspace reddit-chile.xcworkspace -destination 'platform=iOS Simulator,OS=15.2,name=iPhone 13 Pro Max' | xcpretty && exit ${PIPESTATUS[0]}
