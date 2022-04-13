@@ -6,9 +6,10 @@ before_install:
 # Avoid error: Encountered an unknown error (uninitialized constant Concurrent::Promises) during validation
 # https://github.com/CocoaPods/CocoaPods/issues/8948
 - gem update concurrent-ruby
-- pod install
+- pod install --repo-update
 # - pod install --project-directory=Example
 script:
-  - xcodebuild -scheme reddit-chile -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.2' build test
+    - xcodebuild clean build -scheme reddit-chile -workspace reddit-chile.xcworkspace -destination 'platform=iOS Simulator,OS=15.2,name=iPhone 13 Pro Max' | xcpretty && exit ${PIPESTATUS[0]}
+    - xcodebuild test -scheme reddit-chile -workspace reddit-chile.xcworkspace -destination 'platform=iOS Simulator,OS=15.2,name=iPhone 13 Pro Max' | xcpretty && exit ${PIPESTATUS[0]}
 after_success:
   - bash <(curl -s https://codecov.io/bash)
