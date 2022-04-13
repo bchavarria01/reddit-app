@@ -39,7 +39,7 @@ class NetworkingTest: XCTestCase {
             XCTAssertNotNil(posts)
             expectation.fulfill()
         }
-        wait(for: [expectation], timeout: 3.0)
+        wait(for: [expectation], timeout: 10.0)
     }
     
     func testGetPostsFail() {
