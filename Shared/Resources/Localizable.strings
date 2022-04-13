@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  redit-chile
+
+  Created by Byron Chavarría on 6/4/22.
+  
+*/
+
+"cameraAccessTitle" = "Camera Access";
+"cameraAccessDescription" = "Please allow access to your camera to take photos";
+"allowButtonText" = "Allow";
+"cancelButtonText" = "Cancel";
+"enablePushNotificationsTitle" = "Enable push notifications";
+"enablePushNotificationsDescription" = "Enable push notifications to let \nsend you personal news and updates.";
+"enableButtonText" = "Enable";
+"enableLocationTitle" = "Enable location services";
+"enableLocationDescription" = "We wants to access your location only to provide a better experience by helping you find new friends nearby.";
+"emptyStateTitle" = "No Results";
+"emptyStateDesctiption" = "Sorry, there are no results for this search. Please try another phrase";
+"searchText" = "Search";
