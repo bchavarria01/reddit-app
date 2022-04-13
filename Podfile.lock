@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.5.0)
+  - Gifu (3.3.1)
   - Nuke (10.7.1)
   - NukeUI (0.8.0):
     - Gifu (~> 3.0)
@@ -14,16 +15,18 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Gifu
     - Nuke
     - NukeUI
     - SwiftGen
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  Gifu: 416d4e38c4c2fed012f019e0a1d3ffcb58e5b842
   Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
   NukeUI: 6e99837a8d066c93baa4262692d9ea9ffbc863ba
   SwiftGen: a6d22010845f08fe18fbdf3a07a8e380fd22e0ea
 
-PODFILE CHECKSUM: ab11529318e7ee6b31aba56a310ab2927f0edcc9
+PODFILE CHECKSUM: 4e01aaa76573fa33c7becb4a8d58cd3b892e84ff
 
 COCOAPODS: 1.11.2
