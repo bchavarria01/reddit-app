@@ -9,4 +9,6 @@ target 'reddit-chile (iOS)' do
   pod 'SwiftGen'
   pod 'Alamofire'
   pod 'NukeUI'
+  
+  target :'Tests iOS'
 end

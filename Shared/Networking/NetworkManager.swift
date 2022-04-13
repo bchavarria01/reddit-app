@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 class NetworkManager {
-    let baseUrl = "https://www.reddit.com/r/chile/new/.json?limit=100"
+    var baseUrl = "https://www.reddit.com/r/chile/new/.json?limit=100"
     
     func getPosts(completionClosure: @escaping (PostsResponse?, String) -> (), errorClosure: @escaping ((Error) -> ())) {
         let headers: HTTPHeaders = ["Content-Type": "application/json"]
@@ -27,7 +27,7 @@ class NetworkManager {
                             completionClosure(posts, "")
                         }
                     } catch let error {
-                        print("Error: \(error.localizedDescription)")
+                        errorClosure(error)
                     }
                 default:
                     completionClosure(nil, "Status code: \(status)")
